@@ -12,6 +12,6 @@ module.exports.authorizationCallback = function(req, res) {
             return console.error(err);
         }
 
-        return res.redirect(`/profile?access_token=${results.access_token}`);
+        return res.redirect(`/profile?t=${results.access_token}`);
     });
 }
