@@ -1,4 +1,3 @@
-var Linkedin = require('node-linkedin')('78m6kmzfd6yoqf', 'lqfcxRk3d4Jpz3dN');
 
 module.exports.index = function (req, res) {
     var linkedin = Linkedin.init(req.params.token);
@@ -6,5 +5,5 @@ module.exports.index = function (req, res) {
        console.log($in);
     });
 
-    res.render('index', {"title":"nodejs starter"});
+    res.render('index', $in);
 }
