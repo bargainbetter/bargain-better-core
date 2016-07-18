@@ -1,1 +1,6 @@
-# node-js starter project
+# bargain better core
+
+Login - Auth
+Profile
+Transact
+Dashboard
